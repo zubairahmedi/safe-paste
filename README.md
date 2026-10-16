@@ -4,6 +4,7 @@
 
 Free tool for nonprofit staff, caseworkers and anyone who handles client information.
 Use it here: **https://tools.safeaifornonprofits.ca/safe-paste/**
+Watch the 2 minute how-to: https://www.youtube.com/watch?v=acWYuqyHrb4
 
 Built by [Zehaan Khan](https://www.linkedin.com/in/zehaankhan/) at [Safe AI for Nonprofits](https://safeaifornonprofits.ca).
 
