@@ -1,0 +1,2720 @@
+{
+ "A_default": {
+  "notes": 200,
+  "direct_details": 1451,
+  "direct_caught": 1297,
+  "direct_rate": 89.4,
+  "clean_notes": 90,
+  "clean_rate": 45.0,
+  "false_alarms": 0,
+  "by_group": {
+   "Full names": {
+    "caught": 157,
+    "total": 157,
+    "rate": 100.0
+   },
+   "Dates of birth": {
+    "caught": 92,
+    "total": 92,
+    "rate": 100.0
+   },
+   "ID and health numbers": {
+    "caught": 198,
+    "total": 198,
+    "rate": 100.0
+   },
+   "First names after the full name": {
+    "caught": 157,
+    "total": 157,
+    "rate": 100.0
+   },
+   "Phone numbers": {
+    "caught": 148,
+    "total": 148,
+    "rate": 100.0
+   },
+   "Single names (mid sentence)": {
+    "caught": 84,
+    "total": 84,
+    "rate": 100.0
+   },
+   "Single names starting a sentence": {
+    "caught": 0,
+    "total": 30,
+    "rate": 0.0
+   },
+   "Lowercase names": {
+    "caught": 0,
+    "total": 86,
+    "rate": 0.0
+   },
+   "Names after family words": {
+    "caught": 81,
+    "total": 81,
+    "rate": 100.0
+   },
+   "Emails": {
+    "caught": 70,
+    "total": 70,
+    "rate": 100.0
+   },
+   "Names after a title (Ms., Dr.)": {
+    "caught": 92,
+    "total": 92,
+    "rate": 100.0
+   },
+   "Descriptions that identify someone": {
+    "caught": 0,
+    "total": 40,
+    "rate": 0.0
+   },
+   "ALL CAPS names": {
+    "caught": 24,
+    "total": 24,
+    "rate": 100.0
+   },
+   "Street addresses": {
+    "caught": 100,
+    "total": 101,
+    "rate": 99.0
+   },
+   "Postcodes": {
+    "caught": 78,
+    "total": 78,
+    "rate": 100.0
+   },
+   "Word names starting a sentence (Grace, Hope)": {
+    "caught": 1,
+    "total": 38,
+    "rate": 2.6
+   },
+   "Names in non-Latin script": {
+    "caught": 15,
+    "total": 15,
+    "rate": 100.0
+   }
+  },
+  "by_kind": {
+   "name_full": {
+    "caught": 119,
+    "partial": 0,
+    "missed": 0,
+    "group": "Full names",
+    "total": 119,
+    "rate": 100.0
+   },
+   "dob_two_digit_year": {
+    "caught": 15,
+    "partial": 0,
+    "missed": 0,
+    "group": "Dates of birth",
+    "total": 15,
+    "rate": 100.0
+   },
+   "health_card_ohip": {
+    "caught": 26,
+    "partial": 0,
+    "missed": 0,
+    "group": "ID and health numbers",
+    "total": 26,
+    "rate": 100.0
+   },
+   "name_first_after_full": {
+    "caught": 157,
+    "partial": 0,
+    "missed": 0,
+    "group": "First names after the full name",
+    "total": 157,
+    "rate": 100.0
+   },
+   "phone_dots": {
+    "caught": 31,
+    "partial": 0,
+    "missed": 0,
+    "group": "Phone numbers",
+    "total": 31,
+    "rate": 100.0
+   },
+   "name_single_mid": {
+    "caught": 84,
+    "partial": 0,
+    "missed": 0,
+    "group": "Single names (mid sentence)",
+    "total": 84,
+    "rate": 100.0
+   },
+   "name_single_start": {
+    "caught": 0,
+    "partial": 0,
+    "missed": 30,
+    "group": "Single names starting a sentence",
+    "total": 30,
+    "rate": 0.0
+   },
+   "dob_day_month": {
+    "caught": 17,
+    "partial": 0,
+    "missed": 0,
+    "group": "Dates of birth",
+    "total": 17,
+    "rate": 100.0
+   },
+   "phone_dash": {
+    "caught": 23,
+    "partial": 0,
+    "missed": 0,
+    "group": "Phone numbers",
+    "total": 23,
+    "rate": 100.0
+   },
+   "name_lowercase": {
+    "caught": 0,
+    "partial": 0,
+    "missed": 86,
+    "group": "Lowercase names",
+    "total": 86,
+    "rate": 0.0
+   },
+   "phone_uk_intl": {
+    "caught": 16,
+    "partial": 0,
+    "missed": 0,
+    "group": "Phone numbers",
+    "total": 16,
+    "rate": 100.0
+   },
+   "name_hyphen": {
+    "caught": 18,
+    "partial": 0,
+    "missed": 0,
+    "group": "Full names",
+    "total": 18,
+    "rate": 100.0
+   },
+   "nhs": {
+    "caught": 14,
+    "partial": 0,
+    "missed": 0,
+    "group": "ID and health numbers",
+    "total": 14,
+    "rate": 100.0
+   },
+   "name_context": {
+    "caught": 81,
+    "partial": 0,
+    "missed": 0,
+    "group": "Names after family words",
+    "total": 81,
+    "rate": 100.0
+   },
+   "email": {
+    "caught": 70,
+    "partial": 0,
+    "missed": 0,
+    "group": "Emails",
+    "total": 70,
+    "rate": 100.0
+   },
+   "sin": {
+    "caught": 27,
+    "partial": 0,
+    "missed": 0,
+    "group": "ID and health numbers",
+    "total": 27,
+    "rate": 100.0
+   },
+   "phone_intl": {
+    "caught": 16,
+    "partial": 0,
+    "missed": 0,
+    "group": "Phone numbers",
+    "total": 16,
+    "rate": 100.0
+   },
+   "name_title": {
+    "caught": 92,
+    "partial": 0,
+    "missed": 0,
+    "group": "Names after a title (Ms., Dr.)",
+    "total": 92,
+    "rate": 100.0
+   },
+   "description": {
+    "caught": 0,
+    "partial": 27,
+    "missed": 13,
+    "group": "Descriptions that identify someone",
+    "total": 40,
+    "rate": 0.0
+   },
+   "credit_card": {
+    "caught": 15,
+    "partial": 0,
+    "missed": 0,
+    "group": "ID and health numbers",
+    "total": 15,
+    "rate": 100.0
+   },
+   "name_allcaps": {
+    "caught": 24,
+    "partial": 0,
+    "missed": 0,
+    "group": "ALL CAPS names",
+    "total": 24,
+    "rate": 100.0
+   },
+   "name_word_full": {
+    "caught": 20,
+    "partial": 0,
+    "missed": 0,
+    "group": "Full names",
+    "total": 20,
+    "rate": 100.0
+   },
+   "dob_long": {
+    "caught": 20,
+    "partial": 0,
+    "missed": 0,
+    "group": "Dates of birth",
+    "total": 20,
+    "rate": 100.0
+   },
+   "phone_plain": {
+    "caught": 17,
+    "partial": 0,
+    "missed": 0,
+    "group": "Phone numbers",
+    "total": 17,
+    "rate": 100.0
+   },
+   "address_basic": {
+    "caught": 30,
+    "partial": 0,
+    "missed": 0,
+    "group": "Street addresses",
+    "total": 30,
+    "rate": 100.0
+   },
+   "zip_us": {
+    "caught": 7,
+    "partial": 0,
+    "missed": 0,
+    "group": "Postcodes",
+    "total": 7,
+    "rate": 100.0
+   },
+   "dob_slash": {
+    "caught": 21,
+    "partial": 0,
+    "missed": 0,
+    "group": "Dates of birth",
+    "total": 21,
+    "rate": 100.0
+   },
+   "client_id": {
+    "caught": 58,
+    "partial": 0,
+    "missed": 0,
+    "group": "ID and health numbers",
+    "total": 58,
+    "rate": 100.0
+   },
+   "phone_paren": {
+    "caught": 21,
+    "partial": 0,
+    "missed": 0,
+    "group": "Phone numbers",
+    "total": 21,
+    "rate": 100.0
+   },
+   "name_word_start": {
+    "caught": 1,
+    "partial": 0,
+    "missed": 37,
+    "group": "Word names starting a sentence (Grace, Hope)",
+    "total": 38,
+    "rate": 2.6
+   },
+   "health_card_no_version": {
+    "caught": 24,
+    "partial": 0,
+    "missed": 0,
+    "group": "ID and health numbers",
+    "total": 24,
+    "rate": 100.0
+   },
+   "address_unit_after": {
+    "caught": 20,
+    "partial": 0,
+    "missed": 0,
+    "group": "Street addresses",
+    "total": 20,
+    "rate": 100.0
+   },
+   "postcode_ca_lowercase": {
+    "caught": 20,
+    "partial": 0,
+    "missed": 0,
+    "group": "Postcodes",
+    "total": 20,
+    "rate": 100.0
+   },
+   "address_unit_dash": {
+    "caught": 20,
+    "partial": 0,
+    "missed": 0,
+    "group": "Street addresses",
+    "total": 20,
+    "rate": 100.0
+   },
+   "postcode_ca": {
+    "caught": 31,
+    "partial": 0,
+    "missed": 0,
+    "group": "Postcodes",
+    "total": 31,
+    "rate": 100.0
+   },
+   "health_card_bc_phn": {
+    "caught": 10,
+    "partial": 0,
+    "missed": 0,
+    "group": "ID and health numbers",
+    "total": 10,
+    "rate": 100.0
+   },
+   "address_flat_first": {
+    "caught": 8,
+    "partial": 0,
+    "missed": 0,
+    "group": "Street addresses",
+    "total": 8,
+    "rate": 100.0
+   },
+   "postcode_uk": {
+    "caught": 20,
+    "partial": 0,
+    "missed": 0,
+    "group": "Postcodes",
+    "total": 20,
+    "rate": 100.0
+   },
+   "ssn": {
+    "caught": 5,
+    "partial": 0,
+    "missed": 0,
+    "group": "ID and health numbers",
+    "total": 5,
+    "rate": 100.0
+   },
+   "name_nonlatin": {
+    "caught": 15,
+    "partial": 0,
+    "missed": 0,
+    "group": "Names in non-Latin script",
+    "total": 15,
+    "rate": 100.0
+   },
+   "dob_iso": {
+    "caught": 19,
+    "partial": 0,
+    "missed": 0,
+    "group": "Dates of birth",
+    "total": 19,
+    "rate": 100.0
+   },
+   "ni_number": {
+    "caught": 19,
+    "partial": 0,
+    "missed": 0,
+    "group": "ID and health numbers",
+    "total": 19,
+    "rate": 100.0
+   },
+   "phone_uk": {
+    "caught": 24,
+    "partial": 0,
+    "missed": 0,
+    "group": "Phone numbers",
+    "total": 24,
+    "rate": 100.0
+   },
+   "address_lowercase": {
+    "caught": 22,
+    "partial": 0,
+    "missed": 1,
+    "group": "Street addresses",
+    "total": 23,
+    "rate": 95.7
+   }
+  },
+  "misses": [
+   {
+    "note": 1,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Lucia"
+   },
+   {
+    "note": 3,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "abdi tran"
+   },
+   {
+    "note": 3,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "abdi"
+   },
+   {
+    "note": 5,
+    "kind": "description",
+    "result": "partial",
+    "value": "She drives the pink school bus on the Lawrence route and lives above the pharmacy."
+   },
+   {
+    "note": 6,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Samir"
+   },
+   {
+    "note": 8,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "taras patel"
+   },
+   {
+    "note": 8,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "taras"
+   },
+   {
+    "note": 9,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Mark"
+   },
+   {
+    "note": 10,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Dawn"
+   },
+   {
+    "note": 11,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Summer"
+   },
+   {
+    "note": 12,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Grace"
+   },
+   {
+    "note": 13,
+    "kind": "description",
+    "result": "partial",
+    "value": "She drives the pink school bus on the Lawrence route and lives above the pharmacy."
+   },
+   {
+    "note": 14,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Selam"
+   },
+   {
+    "note": 16,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "samir bakr"
+   },
+   {
+    "note": 16,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "samir"
+   },
+   {
+    "note": 17,
+    "kind": "description",
+    "result": "partial",
+    "value": "She drives the pink school bus on the Lawrence route and lives above the pharmacy."
+   },
+   {
+    "note": 19,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Siobhan"
+   },
+   {
+    "note": 21,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Dawn"
+   },
+   {
+    "note": 23,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "hodan hassan"
+   },
+   {
+    "note": 23,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "hodan"
+   },
+   {
+    "note": 24,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "olena kaur"
+   },
+   {
+    "note": 24,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "olena"
+   },
+   {
+    "note": 25,
+    "kind": "description",
+    "result": "partial",
+    "value": "She is the only Tigrinya speaking mother of triplets at our Jane and Finch site."
+   },
+   {
+    "note": 26,
+    "kind": "description",
+    "result": "missed",
+    "value": "He's the former city councillor's nephew who was in the news last month."
+   },
+   {
+    "note": 27,
+    "kind": "description",
+    "result": "missed",
+    "value": "She is the only resident on the third floor who uses a guide dog."
+   },
+   {
+    "note": 28,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Will"
+   },
+   {
+    "note": 28,
+    "kind": "description",
+    "result": "missed",
+    "value": "She is the only resident on the third floor who uses a guide dog."
+   },
+   {
+    "note": 32,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "priya morales"
+   },
+   {
+    "note": 32,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "priya"
+   },
+   {
+    "note": 34,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Mark"
+   },
+   {
+    "note": 37,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Hodan"
+   },
+   {
+    "note": 37,
+    "kind": "description",
+    "result": "partial",
+    "value": "She drives the pink school bus on the Lawrence route and lives above the pharmacy."
+   },
+   {
+    "note": 42,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Sky"
+   },
+   {
+    "note": 43,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "grace lopez-garcia"
+   },
+   {
+    "note": 43,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "grace"
+   },
+   {
+    "note": 44,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Faith"
+   },
+   {
+    "note": 45,
+    "kind": "description",
+    "result": "missed",
+    "value": "She is the only resident on the third floor who uses a guide dog."
+   },
+   {
+    "note": 46,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Ayaan"
+   },
+   {
+    "note": 46,
+    "kind": "description",
+    "result": "partial",
+    "value": "She drives the pink school bus on the Lawrence route and lives above the pharmacy."
+   },
+   {
+    "note": 48,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "hunter brown"
+   },
+   {
+    "note": 48,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "hunter"
+   },
+   {
+    "note": 49,
+    "kind": "description",
+    "result": "missed",
+    "value": "She is the only resident on the third floor who uses a guide dog."
+   },
+   {
+    "note": 51,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Grace"
+   },
+   {
+    "note": 52,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Joy"
+   },
+   {
+    "note": 54,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "selam al-hassan"
+   },
+   {
+    "note": 54,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "selam"
+   },
+   {
+    "note": 55,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "jean-luc kaur"
+   },
+   {
+    "note": 55,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "jean-luc"
+   },
+   {
+    "note": 56,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "hunter shevchenko"
+   },
+   {
+    "note": 56,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "hunter"
+   },
+   {
+    "note": 57,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Nadia"
+   },
+   {
+    "note": 58,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Aoife"
+   },
+   {
+    "note": 58,
+    "kind": "description",
+    "result": "partial",
+    "value": "He's the only Syrian dentist retraining through our program this year."
+   },
+   {
+    "note": 59,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Siobhan"
+   },
+   {
+    "note": 62,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Leila"
+   },
+   {
+    "note": 62,
+    "kind": "description",
+    "result": "missed",
+    "value": "He's the former city councillor's nephew who was in the news last month."
+   },
+   {
+    "note": 63,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "jean-luc ali"
+   },
+   {
+    "note": 63,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "jean-luc"
+   },
+   {
+    "note": 64,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Aoife"
+   },
+   {
+    "note": 65,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Noah"
+   },
+   {
+    "note": 66,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Amina"
+   },
+   {
+    "note": 67,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Wei"
+   },
+   {
+    "note": 70,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Sky"
+   },
+   {
+    "note": 71,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Hope"
+   },
+   {
+    "note": 73,
+    "kind": "description",
+    "result": "partial",
+    "value": "He's the only Syrian dentist retraining through our program this year."
+   },
+   {
+    "note": 75,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "samir patel"
+   },
+   {
+    "note": 75,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "samir"
+   },
+   {
+    "note": 77,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "will mensah"
+   },
+   {
+    "note": 77,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "will"
+   },
+   {
+    "note": 79,
+    "kind": "description",
+    "result": "partial",
+    "value": "He coaches the under 12 cricket team at the community centre on Sundays."
+   },
+   {
+    "note": 80,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Sky"
+   },
+   {
+    "note": 80,
+    "kind": "description",
+    "result": "partial",
+    "value": "He's the deacon at the church on Weston whose wife passed in the spring."
+   },
+   {
+    "note": 81,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "will ahmadi"
+   },
+   {
+    "note": 81,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "will"
+   },
+   {
+    "note": 82,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "aoife khoury"
+   },
+   {
+    "note": 82,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "aoife"
+   },
+   {
+    "note": 84,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Grace"
+   },
+   {
+    "note": 84,
+    "kind": "description",
+    "result": "partial",
+    "value": "She drives the pink school bus on the Lawrence route and lives above the pharmacy."
+   },
+   {
+    "note": 85,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Hope"
+   },
+   {
+    "note": 86,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Wei"
+   },
+   {
+    "note": 86,
+    "kind": "description",
+    "result": "partial",
+    "value": "He's the deacon at the church on Weston whose wife passed in the spring."
+   },
+   {
+    "note": 87,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Joy"
+   },
+   {
+    "note": 88,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Will"
+   },
+   {
+    "note": 90,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Kwame"
+   },
+   {
+    "note": 92,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Sky"
+   },
+   {
+    "note": 98,
+    "kind": "description",
+    "result": "partial",
+    "value": "She is the only Tigrinya speaking mother of triplets at our Jane and Finch site."
+   },
+   {
+    "note": 100,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "maria ali"
+   },
+   {
+    "note": 100,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "maria"
+   },
+   {
+    "note": 101,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Will"
+   },
+   {
+    "note": 101,
+    "kind": "description",
+    "result": "partial",
+    "value": "He's the deacon at the church on Weston whose wife passed in the spring."
+   },
+   {
+    "note": 102,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "amina khoury"
+   },
+   {
+    "note": 102,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "amina"
+   },
+   {
+    "note": 103,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "hamid murphy"
+   },
+   {
+    "note": 103,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "hamid"
+   },
+   {
+    "note": 104,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Hunter"
+   },
+   {
+    "note": 104,
+    "kind": "description",
+    "result": "partial",
+    "value": "He's the deacon at the church on Weston whose wife passed in the spring."
+   },
+   {
+    "note": 105,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Faith"
+   },
+   {
+    "note": 107,
+    "kind": "description",
+    "result": "missed",
+    "value": "She is the only resident on the third floor who uses a guide dog."
+   },
+   {
+    "note": 108,
+    "kind": "description",
+    "result": "partial",
+    "value": "She is the only Tigrinya speaking mother of triplets at our Jane and Finch site."
+   },
+   {
+    "note": 109,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "arjun patel"
+   },
+   {
+    "note": 109,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "arjun"
+   },
+   {
+    "note": 110,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "hope tesfaye"
+   },
+   {
+    "note": 110,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "hope"
+   },
+   {
+    "note": 112,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Priya"
+   },
+   {
+    "note": 113,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Joy"
+   },
+   {
+    "note": 117,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "hamid singh"
+   },
+   {
+    "note": 117,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "hamid"
+   },
+   {
+    "note": 118,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "tariq singh"
+   },
+   {
+    "note": 118,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "tariq"
+   },
+   {
+    "note": 119,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Zahra"
+   },
+   {
+    "note": 120,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Harpreet"
+   },
+   {
+    "note": 121,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Rose"
+   },
+   {
+    "note": 121,
+    "kind": "description",
+    "result": "partial",
+    "value": "She is the only Tigrinya speaking mother of triplets at our Jane and Finch site."
+   },
+   {
+    "note": 122,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Rose"
+   },
+   {
+    "note": 122,
+    "kind": "description",
+    "result": "missed",
+    "value": "He's the former city councillor's nephew who was in the news last month."
+   },
+   {
+    "note": 125,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Siobhan"
+   },
+   {
+    "note": 126,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "kwame macdonald"
+   },
+   {
+    "note": 126,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "kwame"
+   },
+   {
+    "note": 127,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Bill"
+   },
+   {
+    "note": 127,
+    "kind": "description",
+    "result": "missed",
+    "value": "He's the former city councillor's nephew who was in the news last month."
+   },
+   {
+    "note": 128,
+    "kind": "description",
+    "result": "partial",
+    "value": "He coaches the under 12 cricket team at the community centre on Sundays."
+   },
+   {
+    "note": 129,
+    "kind": "description",
+    "result": "missed",
+    "value": "He's the former city councillor's nephew who was in the news last month."
+   },
+   {
+    "note": 130,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Priya"
+   },
+   {
+    "note": 131,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "layla nwosu"
+   },
+   {
+    "note": 131,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "layla"
+   },
+   {
+    "note": 132,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Aoife"
+   },
+   {
+    "note": 132,
+    "kind": "description",
+    "result": "partial",
+    "value": "He's the only Syrian dentist retraining through our program this year."
+   },
+   {
+    "note": 134,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "sky nguyen"
+   },
+   {
+    "note": 134,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "sky"
+   },
+   {
+    "note": 135,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Fatima"
+   },
+   {
+    "note": 137,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Zahra"
+   },
+   {
+    "note": 139,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "sky ali"
+   },
+   {
+    "note": 139,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "sky"
+   },
+   {
+    "note": 141,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "noah khoury"
+   },
+   {
+    "note": 141,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "noah"
+   },
+   {
+    "note": 144,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Hunter"
+   },
+   {
+    "note": 146,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "olena murphy"
+   },
+   {
+    "note": 146,
+    "kind": "address_lowercase",
+    "result": "missed",
+    "value": "220 oak lane"
+   },
+   {
+    "note": 146,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "olena"
+   },
+   {
+    "note": 147,
+    "kind": "description",
+    "result": "missed",
+    "value": "He's the former city councillor's nephew who was in the news last month."
+   },
+   {
+    "note": 150,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "selam singh"
+   },
+   {
+    "note": 150,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "selam"
+   },
+   {
+    "note": 151,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "jean-pierre nguyen"
+   },
+   {
+    "note": 151,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "jean-pierre"
+   },
+   {
+    "note": 152,
+    "kind": "description",
+    "result": "partial",
+    "value": "She's the 14 year old who was suspended after the fire in the Westview gym."
+   },
+   {
+    "note": 154,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Ama"
+   },
+   {
+    "note": 154,
+    "kind": "description",
+    "result": "missed",
+    "value": "He's the former city councillor's nephew who was in the news last month."
+   },
+   {
+    "note": 155,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "anne-marie mohamed"
+   },
+   {
+    "note": 155,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "anne-marie"
+   },
+   {
+    "note": 156,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Sky"
+   },
+   {
+    "note": 157,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Sky"
+   },
+   {
+    "note": 160,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Hamid"
+   },
+   {
+    "note": 161,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "fatima wang"
+   },
+   {
+    "note": 161,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "fatima"
+   },
+   {
+    "note": 162,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Yusuf"
+   },
+   {
+    "note": 162,
+    "kind": "description",
+    "result": "partial",
+    "value": "She drives the pink school bus on the Lawrence route and lives above the pharmacy."
+   },
+   {
+    "note": 163,
+    "kind": "description",
+    "result": "partial",
+    "value": "She is the only Tigrinya speaking mother of triplets at our Jane and Finch site."
+   },
+   {
+    "note": 164,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Mark"
+   },
+   {
+    "note": 165,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "daniel tremblay"
+   },
+   {
+    "note": 165,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "daniel"
+   },
+   {
+    "note": 166,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Dawn"
+   },
+   {
+    "note": 167,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Rose"
+   },
+   {
+    "note": 168,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Summer"
+   },
+   {
+    "note": 169,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "selam kovalenko"
+   },
+   {
+    "note": 169,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "selam"
+   },
+   {
+    "note": 170,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "reza tran"
+   },
+   {
+    "note": 170,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "reza"
+   },
+   {
+    "note": 171,
+    "kind": "description",
+    "result": "partial",
+    "value": "He coaches the under 12 cricket team at the community centre on Sundays."
+   },
+   {
+    "note": 173,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Joy"
+   },
+   {
+    "note": 174,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "will tremblay"
+   },
+   {
+    "note": 174,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "will"
+   },
+   {
+    "note": 175,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "kwame o'neill"
+   },
+   {
+    "note": 175,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "kwame"
+   },
+   {
+    "note": 176,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "zahra mohamed"
+   },
+   {
+    "note": 176,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "zahra"
+   },
+   {
+    "note": 177,
+    "kind": "description",
+    "result": "partial",
+    "value": "She is the only Tigrinya speaking mother of triplets at our Jane and Finch site."
+   },
+   {
+    "note": 179,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Omar"
+   },
+   {
+    "note": 180,
+    "kind": "description",
+    "result": "partial",
+    "value": "She's the 14 year old who was suspended after the fire in the Westview gym."
+   },
+   {
+    "note": 181,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Faith"
+   },
+   {
+    "note": 182,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Taras"
+   },
+   {
+    "note": 183,
+    "kind": "description",
+    "result": "partial",
+    "value": "She's the 14 year old who was suspended after the fire in the Westview gym."
+   },
+   {
+    "note": 189,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Bill"
+   },
+   {
+    "note": 189,
+    "kind": "description",
+    "result": "missed",
+    "value": "He's the former city councillor's nephew who was in the news last month."
+   },
+   {
+    "note": 190,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "hannah kovalenko"
+   },
+   {
+    "note": 190,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "hannah"
+   },
+   {
+    "note": 191,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Fatima"
+   },
+   {
+    "note": 193,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "bill murphy"
+   },
+   {
+    "note": 193,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "bill"
+   },
+   {
+    "note": 194,
+    "kind": "description",
+    "result": "partial",
+    "value": "He's the only Syrian dentist retraining through our program this year."
+   },
+   {
+    "note": 197,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Sky"
+   },
+   {
+    "note": 198,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "abdi o'neill"
+   },
+   {
+    "note": 198,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "abdi"
+   },
+   {
+    "note": 200,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "mark al-hassan"
+   },
+   {
+    "note": 200,
+    "kind": "name_lowercase",
+    "result": "missed",
+    "value": "mark"
+   }
+  ],
+  "false_alarm_list": []
+ },
+ "B_name_in_always_hide": {
+  "notes": 200,
+  "direct_details": 1451,
+  "direct_caught": 1383,
+  "direct_rate": 95.3,
+  "clean_notes": 132,
+  "clean_rate": 66.0,
+  "false_alarms": 0,
+  "by_group": {
+   "Full names": {
+    "caught": 157,
+    "total": 157,
+    "rate": 100.0
+   },
+   "Dates of birth": {
+    "caught": 92,
+    "total": 92,
+    "rate": 100.0
+   },
+   "ID and health numbers": {
+    "caught": 198,
+    "total": 198,
+    "rate": 100.0
+   },
+   "First names after the full name": {
+    "caught": 157,
+    "total": 157,
+    "rate": 100.0
+   },
+   "Phone numbers": {
+    "caught": 148,
+    "total": 148,
+    "rate": 100.0
+   },
+   "Single names (mid sentence)": {
+    "caught": 84,
+    "total": 84,
+    "rate": 100.0
+   },
+   "Single names starting a sentence": {
+    "caught": 0,
+    "total": 30,
+    "rate": 0.0
+   },
+   "Lowercase names": {
+    "caught": 86,
+    "total": 86,
+    "rate": 100.0
+   },
+   "Names after family words": {
+    "caught": 81,
+    "total": 81,
+    "rate": 100.0
+   },
+   "Emails": {
+    "caught": 70,
+    "total": 70,
+    "rate": 100.0
+   },
+   "Names after a title (Ms., Dr.)": {
+    "caught": 92,
+    "total": 92,
+    "rate": 100.0
+   },
+   "Descriptions that identify someone": {
+    "caught": 0,
+    "total": 40,
+    "rate": 0.0
+   },
+   "ALL CAPS names": {
+    "caught": 24,
+    "total": 24,
+    "rate": 100.0
+   },
+   "Street addresses": {
+    "caught": 100,
+    "total": 101,
+    "rate": 99.0
+   },
+   "Postcodes": {
+    "caught": 78,
+    "total": 78,
+    "rate": 100.0
+   },
+   "Word names starting a sentence (Grace, Hope)": {
+    "caught": 1,
+    "total": 38,
+    "rate": 2.6
+   },
+   "Names in non-Latin script": {
+    "caught": 15,
+    "total": 15,
+    "rate": 100.0
+   }
+  },
+  "by_kind": {
+   "name_full": {
+    "caught": 119,
+    "partial": 0,
+    "missed": 0,
+    "group": "Full names",
+    "total": 119,
+    "rate": 100.0
+   },
+   "dob_two_digit_year": {
+    "caught": 15,
+    "partial": 0,
+    "missed": 0,
+    "group": "Dates of birth",
+    "total": 15,
+    "rate": 100.0
+   },
+   "health_card_ohip": {
+    "caught": 26,
+    "partial": 0,
+    "missed": 0,
+    "group": "ID and health numbers",
+    "total": 26,
+    "rate": 100.0
+   },
+   "name_first_after_full": {
+    "caught": 157,
+    "partial": 0,
+    "missed": 0,
+    "group": "First names after the full name",
+    "total": 157,
+    "rate": 100.0
+   },
+   "phone_dots": {
+    "caught": 31,
+    "partial": 0,
+    "missed": 0,
+    "group": "Phone numbers",
+    "total": 31,
+    "rate": 100.0
+   },
+   "name_single_mid": {
+    "caught": 84,
+    "partial": 0,
+    "missed": 0,
+    "group": "Single names (mid sentence)",
+    "total": 84,
+    "rate": 100.0
+   },
+   "name_single_start": {
+    "caught": 0,
+    "partial": 0,
+    "missed": 30,
+    "group": "Single names starting a sentence",
+    "total": 30,
+    "rate": 0.0
+   },
+   "dob_day_month": {
+    "caught": 17,
+    "partial": 0,
+    "missed": 0,
+    "group": "Dates of birth",
+    "total": 17,
+    "rate": 100.0
+   },
+   "phone_dash": {
+    "caught": 23,
+    "partial": 0,
+    "missed": 0,
+    "group": "Phone numbers",
+    "total": 23,
+    "rate": 100.0
+   },
+   "name_lowercase": {
+    "caught": 86,
+    "partial": 0,
+    "missed": 0,
+    "group": "Lowercase names",
+    "total": 86,
+    "rate": 100.0
+   },
+   "phone_uk_intl": {
+    "caught": 16,
+    "partial": 0,
+    "missed": 0,
+    "group": "Phone numbers",
+    "total": 16,
+    "rate": 100.0
+   },
+   "name_hyphen": {
+    "caught": 18,
+    "partial": 0,
+    "missed": 0,
+    "group": "Full names",
+    "total": 18,
+    "rate": 100.0
+   },
+   "nhs": {
+    "caught": 14,
+    "partial": 0,
+    "missed": 0,
+    "group": "ID and health numbers",
+    "total": 14,
+    "rate": 100.0
+   },
+   "name_context": {
+    "caught": 81,
+    "partial": 0,
+    "missed": 0,
+    "group": "Names after family words",
+    "total": 81,
+    "rate": 100.0
+   },
+   "email": {
+    "caught": 70,
+    "partial": 0,
+    "missed": 0,
+    "group": "Emails",
+    "total": 70,
+    "rate": 100.0
+   },
+   "sin": {
+    "caught": 27,
+    "partial": 0,
+    "missed": 0,
+    "group": "ID and health numbers",
+    "total": 27,
+    "rate": 100.0
+   },
+   "phone_intl": {
+    "caught": 16,
+    "partial": 0,
+    "missed": 0,
+    "group": "Phone numbers",
+    "total": 16,
+    "rate": 100.0
+   },
+   "name_title": {
+    "caught": 92,
+    "partial": 0,
+    "missed": 0,
+    "group": "Names after a title (Ms., Dr.)",
+    "total": 92,
+    "rate": 100.0
+   },
+   "description": {
+    "caught": 0,
+    "partial": 27,
+    "missed": 13,
+    "group": "Descriptions that identify someone",
+    "total": 40,
+    "rate": 0.0
+   },
+   "credit_card": {
+    "caught": 15,
+    "partial": 0,
+    "missed": 0,
+    "group": "ID and health numbers",
+    "total": 15,
+    "rate": 100.0
+   },
+   "name_allcaps": {
+    "caught": 24,
+    "partial": 0,
+    "missed": 0,
+    "group": "ALL CAPS names",
+    "total": 24,
+    "rate": 100.0
+   },
+   "name_word_full": {
+    "caught": 20,
+    "partial": 0,
+    "missed": 0,
+    "group": "Full names",
+    "total": 20,
+    "rate": 100.0
+   },
+   "dob_long": {
+    "caught": 20,
+    "partial": 0,
+    "missed": 0,
+    "group": "Dates of birth",
+    "total": 20,
+    "rate": 100.0
+   },
+   "phone_plain": {
+    "caught": 17,
+    "partial": 0,
+    "missed": 0,
+    "group": "Phone numbers",
+    "total": 17,
+    "rate": 100.0
+   },
+   "address_basic": {
+    "caught": 30,
+    "partial": 0,
+    "missed": 0,
+    "group": "Street addresses",
+    "total": 30,
+    "rate": 100.0
+   },
+   "zip_us": {
+    "caught": 7,
+    "partial": 0,
+    "missed": 0,
+    "group": "Postcodes",
+    "total": 7,
+    "rate": 100.0
+   },
+   "dob_slash": {
+    "caught": 21,
+    "partial": 0,
+    "missed": 0,
+    "group": "Dates of birth",
+    "total": 21,
+    "rate": 100.0
+   },
+   "client_id": {
+    "caught": 58,
+    "partial": 0,
+    "missed": 0,
+    "group": "ID and health numbers",
+    "total": 58,
+    "rate": 100.0
+   },
+   "phone_paren": {
+    "caught": 21,
+    "partial": 0,
+    "missed": 0,
+    "group": "Phone numbers",
+    "total": 21,
+    "rate": 100.0
+   },
+   "name_word_start": {
+    "caught": 1,
+    "partial": 0,
+    "missed": 37,
+    "group": "Word names starting a sentence (Grace, Hope)",
+    "total": 38,
+    "rate": 2.6
+   },
+   "health_card_no_version": {
+    "caught": 24,
+    "partial": 0,
+    "missed": 0,
+    "group": "ID and health numbers",
+    "total": 24,
+    "rate": 100.0
+   },
+   "address_unit_after": {
+    "caught": 20,
+    "partial": 0,
+    "missed": 0,
+    "group": "Street addresses",
+    "total": 20,
+    "rate": 100.0
+   },
+   "postcode_ca_lowercase": {
+    "caught": 20,
+    "partial": 0,
+    "missed": 0,
+    "group": "Postcodes",
+    "total": 20,
+    "rate": 100.0
+   },
+   "address_unit_dash": {
+    "caught": 20,
+    "partial": 0,
+    "missed": 0,
+    "group": "Street addresses",
+    "total": 20,
+    "rate": 100.0
+   },
+   "postcode_ca": {
+    "caught": 31,
+    "partial": 0,
+    "missed": 0,
+    "group": "Postcodes",
+    "total": 31,
+    "rate": 100.0
+   },
+   "health_card_bc_phn": {
+    "caught": 10,
+    "partial": 0,
+    "missed": 0,
+    "group": "ID and health numbers",
+    "total": 10,
+    "rate": 100.0
+   },
+   "address_flat_first": {
+    "caught": 8,
+    "partial": 0,
+    "missed": 0,
+    "group": "Street addresses",
+    "total": 8,
+    "rate": 100.0
+   },
+   "postcode_uk": {
+    "caught": 20,
+    "partial": 0,
+    "missed": 0,
+    "group": "Postcodes",
+    "total": 20,
+    "rate": 100.0
+   },
+   "ssn": {
+    "caught": 5,
+    "partial": 0,
+    "missed": 0,
+    "group": "ID and health numbers",
+    "total": 5,
+    "rate": 100.0
+   },
+   "name_nonlatin": {
+    "caught": 15,
+    "partial": 0,
+    "missed": 0,
+    "group": "Names in non-Latin script",
+    "total": 15,
+    "rate": 100.0
+   },
+   "dob_iso": {
+    "caught": 19,
+    "partial": 0,
+    "missed": 0,
+    "group": "Dates of birth",
+    "total": 19,
+    "rate": 100.0
+   },
+   "ni_number": {
+    "caught": 19,
+    "partial": 0,
+    "missed": 0,
+    "group": "ID and health numbers",
+    "total": 19,
+    "rate": 100.0
+   },
+   "phone_uk": {
+    "caught": 24,
+    "partial": 0,
+    "missed": 0,
+    "group": "Phone numbers",
+    "total": 24,
+    "rate": 100.0
+   },
+   "address_lowercase": {
+    "caught": 22,
+    "partial": 0,
+    "missed": 1,
+    "group": "Street addresses",
+    "total": 23,
+    "rate": 95.7
+   }
+  },
+  "misses": [
+   {
+    "note": 1,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Lucia"
+   },
+   {
+    "note": 5,
+    "kind": "description",
+    "result": "partial",
+    "value": "She drives the pink school bus on the Lawrence route and lives above the pharmacy."
+   },
+   {
+    "note": 6,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Samir"
+   },
+   {
+    "note": 9,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Mark"
+   },
+   {
+    "note": 10,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Dawn"
+   },
+   {
+    "note": 11,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Summer"
+   },
+   {
+    "note": 12,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Grace"
+   },
+   {
+    "note": 13,
+    "kind": "description",
+    "result": "partial",
+    "value": "She drives the pink school bus on the Lawrence route and lives above the pharmacy."
+   },
+   {
+    "note": 14,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Selam"
+   },
+   {
+    "note": 17,
+    "kind": "description",
+    "result": "partial",
+    "value": "She drives the pink school bus on the Lawrence route and lives above the pharmacy."
+   },
+   {
+    "note": 19,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Siobhan"
+   },
+   {
+    "note": 21,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Dawn"
+   },
+   {
+    "note": 25,
+    "kind": "description",
+    "result": "partial",
+    "value": "She is the only Tigrinya speaking mother of triplets at our Jane and Finch site."
+   },
+   {
+    "note": 26,
+    "kind": "description",
+    "result": "missed",
+    "value": "He's the former city councillor's nephew who was in the news last month."
+   },
+   {
+    "note": 27,
+    "kind": "description",
+    "result": "missed",
+    "value": "She is the only resident on the third floor who uses a guide dog."
+   },
+   {
+    "note": 28,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Will"
+   },
+   {
+    "note": 28,
+    "kind": "description",
+    "result": "missed",
+    "value": "She is the only resident on the third floor who uses a guide dog."
+   },
+   {
+    "note": 34,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Mark"
+   },
+   {
+    "note": 37,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Hodan"
+   },
+   {
+    "note": 37,
+    "kind": "description",
+    "result": "partial",
+    "value": "She drives the pink school bus on the Lawrence route and lives above the pharmacy."
+   },
+   {
+    "note": 42,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Sky"
+   },
+   {
+    "note": 44,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Faith"
+   },
+   {
+    "note": 45,
+    "kind": "description",
+    "result": "missed",
+    "value": "She is the only resident on the third floor who uses a guide dog."
+   },
+   {
+    "note": 46,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Ayaan"
+   },
+   {
+    "note": 46,
+    "kind": "description",
+    "result": "partial",
+    "value": "She drives the pink school bus on the Lawrence route and lives above the pharmacy."
+   },
+   {
+    "note": 49,
+    "kind": "description",
+    "result": "missed",
+    "value": "She is the only resident on the third floor who uses a guide dog."
+   },
+   {
+    "note": 51,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Grace"
+   },
+   {
+    "note": 52,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Joy"
+   },
+   {
+    "note": 57,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Nadia"
+   },
+   {
+    "note": 58,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Aoife"
+   },
+   {
+    "note": 58,
+    "kind": "description",
+    "result": "partial",
+    "value": "He's the only Syrian dentist retraining through our program this year."
+   },
+   {
+    "note": 59,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Siobhan"
+   },
+   {
+    "note": 62,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Leila"
+   },
+   {
+    "note": 62,
+    "kind": "description",
+    "result": "missed",
+    "value": "He's the former city councillor's nephew who was in the news last month."
+   },
+   {
+    "note": 64,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Aoife"
+   },
+   {
+    "note": 65,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Noah"
+   },
+   {
+    "note": 66,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Amina"
+   },
+   {
+    "note": 67,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Wei"
+   },
+   {
+    "note": 70,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Sky"
+   },
+   {
+    "note": 71,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Hope"
+   },
+   {
+    "note": 73,
+    "kind": "description",
+    "result": "partial",
+    "value": "He's the only Syrian dentist retraining through our program this year."
+   },
+   {
+    "note": 79,
+    "kind": "description",
+    "result": "partial",
+    "value": "He coaches the under 12 cricket team at the community centre on Sundays."
+   },
+   {
+    "note": 80,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Sky"
+   },
+   {
+    "note": 80,
+    "kind": "description",
+    "result": "partial",
+    "value": "He's the deacon at the church on Weston whose wife passed in the spring."
+   },
+   {
+    "note": 84,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Grace"
+   },
+   {
+    "note": 84,
+    "kind": "description",
+    "result": "partial",
+    "value": "She drives the pink school bus on the Lawrence route and lives above the pharmacy."
+   },
+   {
+    "note": 85,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Hope"
+   },
+   {
+    "note": 86,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Wei"
+   },
+   {
+    "note": 86,
+    "kind": "description",
+    "result": "partial",
+    "value": "He's the deacon at the church on Weston whose wife passed in the spring."
+   },
+   {
+    "note": 87,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Joy"
+   },
+   {
+    "note": 88,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Will"
+   },
+   {
+    "note": 90,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Kwame"
+   },
+   {
+    "note": 92,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Sky"
+   },
+   {
+    "note": 98,
+    "kind": "description",
+    "result": "partial",
+    "value": "She is the only Tigrinya speaking mother of triplets at our Jane and Finch site."
+   },
+   {
+    "note": 101,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Will"
+   },
+   {
+    "note": 101,
+    "kind": "description",
+    "result": "partial",
+    "value": "He's the deacon at the church on Weston whose wife passed in the spring."
+   },
+   {
+    "note": 104,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Hunter"
+   },
+   {
+    "note": 104,
+    "kind": "description",
+    "result": "partial",
+    "value": "He's the deacon at the church on Weston whose wife passed in the spring."
+   },
+   {
+    "note": 105,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Faith"
+   },
+   {
+    "note": 107,
+    "kind": "description",
+    "result": "missed",
+    "value": "She is the only resident on the third floor who uses a guide dog."
+   },
+   {
+    "note": 108,
+    "kind": "description",
+    "result": "partial",
+    "value": "She is the only Tigrinya speaking mother of triplets at our Jane and Finch site."
+   },
+   {
+    "note": 112,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Priya"
+   },
+   {
+    "note": 113,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Joy"
+   },
+   {
+    "note": 119,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Zahra"
+   },
+   {
+    "note": 120,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Harpreet"
+   },
+   {
+    "note": 121,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Rose"
+   },
+   {
+    "note": 121,
+    "kind": "description",
+    "result": "partial",
+    "value": "She is the only Tigrinya speaking mother of triplets at our Jane and Finch site."
+   },
+   {
+    "note": 122,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Rose"
+   },
+   {
+    "note": 122,
+    "kind": "description",
+    "result": "missed",
+    "value": "He's the former city councillor's nephew who was in the news last month."
+   },
+   {
+    "note": 125,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Siobhan"
+   },
+   {
+    "note": 127,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Bill"
+   },
+   {
+    "note": 127,
+    "kind": "description",
+    "result": "missed",
+    "value": "He's the former city councillor's nephew who was in the news last month."
+   },
+   {
+    "note": 128,
+    "kind": "description",
+    "result": "partial",
+    "value": "He coaches the under 12 cricket team at the community centre on Sundays."
+   },
+   {
+    "note": 129,
+    "kind": "description",
+    "result": "missed",
+    "value": "He's the former city councillor's nephew who was in the news last month."
+   },
+   {
+    "note": 130,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Priya"
+   },
+   {
+    "note": 132,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Aoife"
+   },
+   {
+    "note": 132,
+    "kind": "description",
+    "result": "partial",
+    "value": "He's the only Syrian dentist retraining through our program this year."
+   },
+   {
+    "note": 135,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Fatima"
+   },
+   {
+    "note": 137,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Zahra"
+   },
+   {
+    "note": 144,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Hunter"
+   },
+   {
+    "note": 146,
+    "kind": "address_lowercase",
+    "result": "missed",
+    "value": "220 oak lane"
+   },
+   {
+    "note": 147,
+    "kind": "description",
+    "result": "missed",
+    "value": "He's the former city councillor's nephew who was in the news last month."
+   },
+   {
+    "note": 152,
+    "kind": "description",
+    "result": "partial",
+    "value": "She's the 14 year old who was suspended after the fire in the Westview gym."
+   },
+   {
+    "note": 154,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Ama"
+   },
+   {
+    "note": 154,
+    "kind": "description",
+    "result": "missed",
+    "value": "He's the former city councillor's nephew who was in the news last month."
+   },
+   {
+    "note": 156,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Sky"
+   },
+   {
+    "note": 157,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Sky"
+   },
+   {
+    "note": 160,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Hamid"
+   },
+   {
+    "note": 162,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Yusuf"
+   },
+   {
+    "note": 162,
+    "kind": "description",
+    "result": "partial",
+    "value": "She drives the pink school bus on the Lawrence route and lives above the pharmacy."
+   },
+   {
+    "note": 163,
+    "kind": "description",
+    "result": "partial",
+    "value": "She is the only Tigrinya speaking mother of triplets at our Jane and Finch site."
+   },
+   {
+    "note": 164,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Mark"
+   },
+   {
+    "note": 166,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Dawn"
+   },
+   {
+    "note": 167,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Rose"
+   },
+   {
+    "note": 168,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Summer"
+   },
+   {
+    "note": 171,
+    "kind": "description",
+    "result": "partial",
+    "value": "He coaches the under 12 cricket team at the community centre on Sundays."
+   },
+   {
+    "note": 173,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Joy"
+   },
+   {
+    "note": 177,
+    "kind": "description",
+    "result": "partial",
+    "value": "She is the only Tigrinya speaking mother of triplets at our Jane and Finch site."
+   },
+   {
+    "note": 179,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Omar"
+   },
+   {
+    "note": 180,
+    "kind": "description",
+    "result": "partial",
+    "value": "She's the 14 year old who was suspended after the fire in the Westview gym."
+   },
+   {
+    "note": 181,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Faith"
+   },
+   {
+    "note": 182,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Taras"
+   },
+   {
+    "note": 183,
+    "kind": "description",
+    "result": "partial",
+    "value": "She's the 14 year old who was suspended after the fire in the Westview gym."
+   },
+   {
+    "note": 189,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Bill"
+   },
+   {
+    "note": 189,
+    "kind": "description",
+    "result": "missed",
+    "value": "He's the former city councillor's nephew who was in the news last month."
+   },
+   {
+    "note": 191,
+    "kind": "name_single_start",
+    "result": "missed",
+    "value": "Fatima"
+   },
+   {
+    "note": 194,
+    "kind": "description",
+    "result": "partial",
+    "value": "He's the only Syrian dentist retraining through our program this year."
+   },
+   {
+    "note": 197,
+    "kind": "name_word_start",
+    "result": "missed",
+    "value": "Sky"
+   }
+  ],
+  "false_alarm_list": []
+ }
+}

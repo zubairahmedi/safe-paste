@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- This page never sends anything anywhere: no fetch, no forms, no outside files. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-NXNN4hJAh9q4c49JgnPiaUNbIILiv2lyxzzpqV/N6S4='; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-yiZ7NkGS1Sl7MpBzd4jGnjP5tm+jaPPUymwnOq+TVVQ='; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; form-action 'none'; base-uri 'none'">
 <meta name="referrer" content="no-referrer">
 <title>Safe Paste · Safe AI for Nonprofits</title>
 <meta name="description" content="Free tool for nonprofits: hide names, phone numbers, health card numbers and dates before you paste into ChatGPT, then put them back in the answer. Runs in your browser, nothing is sent anywhere.">
@@ -369,13 +369,16 @@ const PATTERNS = [
   ['SIN', /\b\d{3}[ -]?\d{3}[ -]?\d{3}\b/g, 9, (m, t) => luhn(digits(m[0])) || /\bsin\b|social insurance/i.test(before(t, m.index)) ? 'SIN' : 'ID'],
   ['CARD', /\b(?:\d[ -]?){12,18}\d\b/g, 9, m => { const d = digits(m[0]); return d.length >= 13 && d.length <= 19 && luhn(d) ? 'CARD' : null; }],
   ['PHONE', /(?:\+?1[ .-]?)?(?:\(\d{3}\)|\b\d{3})[ .-]?\d{3}[ .-]?\d{4}\b/g, 8],
-  ['PHONE', /\+\d{1,3}(?:[ .-]?\(?\d{1,5}\)?){2,5}/g, 8, m => { const n = digits(m[0]).length; return n >= 8 && n <= 15 ? 'PHONE' : null; }],
+  // a leading + is a strong phone signal, so it outranks look-alike ID patterns inside it
+  ['PHONE', /\+\d{1,3}(?:[ .-]?\(?\d{1,5}\)?){2,5}/g, 9.2, m => { const n = digits(m[0]).length; return n >= 8 && n <= 15 ? 'PHONE' : null; }],
   ['PHONE', /\b0\d{2,4}[ -]?\d{3,4}[ -]?\d{3,4}\b/g, 8, m => { const n = digits(m[0]).length; return n >= 10 && n <= 11 ? 'PHONE' : null; }],
   ['DATE', /\b(?:19|20)\d{2}[-/.](?:0?[1-9]|1[0-2])[-/.](?:0?[1-9]|[12]\d|3[01])\b/g, 7],
   ['DATE', /\b(?:0?[1-9]|[12]\d|3[01])[-/.](?:0?[1-9]|[12]\d|3[01])[-/.](?:(?:19|20)\d{2}|\d{2})\b/g, 7],
   ['DATE', new RegExp('\\b' + MONTH + '\\.?\\s+\\d{1,2}(?:st|nd|rd|th)?,?\\s+(?:19|20)\\d{2}\\b', 'g'), 7],
   ['DATE', new RegExp('\\b\\d{1,2}(?:st|nd|rd|th)?\\s+(?:of\\s+)?' + MONTH + '\\.?,?\\s+(?:19|20)\\d{2}\\b', 'g'), 7],
-  ['ADDRESS', new RegExp('(?:\\b(?:Flat|Apt|Apartment|Unit|Suite|Ste)\\.?\\s*[\\w-]+,?\\s+)?\\b\\d{1,5}[A-Za-z]?\\s+(?:[\\p{L}\'’.-]+\\s+){0,3}?(?:' + SUFFIX + ')\\b\\.?(?:\\s+(?:North|South|East|West|N|S|E|W)\\b)?(?:,?\\s*(?:Apt|Apartment|Unit|Suite|Ste|Flat|#)\\.?\\s*[\\w-]+)?', 'gu'), 6],
+  // lowercase addresses ("45 birchmount road"): only street types that aren't everyday words
+  ['ADDRESS', /\b(?:\d{1,5}-)?\d{1,5}[a-z]?\s+(?:[a-z'’.-]+\s+){0,3}?(?:street|st|road|rd|avenue|ave|boulevard|blvd|crescent|cres|parkway|pkwy|highway|hwy)\b\.?(?:\s+(?:north|south|east|west|n|s|e|w)\b)?/g, 6],
+  ['ADDRESS', new RegExp('(?:\\b(?:Flat|Apt|Apartment|Unit|Suite|Ste)\\.?\\s*[\\w-]+,?\\s+)?\\b(?:\\d{1,5}-)?\\d{1,5}[A-Za-z]?\\s+(?:[\\p{L}\'’.-]+\\s+){0,3}?(?:' + SUFFIX + ')\\b\\.?(?:\\s+(?:North|South|East|West|N|S|E|W)\\b)?(?:,?\\s*(?:Apt|Apartment|Unit|Suite|Ste|Flat|#)\\.?\\s*[\\w-]+)?', 'gu'), 6],
   ['POSTCODE', /\b[ABCEGHJ-NPRSTVXY]\d[ABCEGHJ-NPRSTV-Z][ -]?\d[ABCEGHJ-NPRSTV-Z]\d\b/gi, 6],
   ['POSTCODE', /\b(?:GIR ?0AA|[A-PR-UWYZ](?:\d[A-HJKPSTUW\d]?|[A-HK-Y]\d[ABEHMNPRV-Y\d]?) ?\d[ABD-HJLNP-UW-Z]{2})\b/g, 6],
   ['POSTCODE', /\b\d{5}-\d{4}\b/g, 6],
@@ -405,7 +408,8 @@ function sentenceStart(text, i){
   return false;
 }
 const isNameWord = w => w.length > 1 && NAMEWORD.test(w) && !STOP.has(w.toLowerCase());
-const lookLikeName = s => { const ws = s.trim().split(/\s+/); return ws.length <= 4 && ws.every(w => NAMEWORD.test(w) || PARTICLES.has(w.toLowerCase()) || (/^[\p{L}\p{M}'’-]+$/u.test(w) && !/[A-Za-z]/.test(w))); };
+// a name typed into "Always hide" in any case ("amina rahimi", "AMINA RAHIMI") or any script still counts as a name
+const lookLikeName = s => { const ws = s.trim().split(/\s+/); return ws.length <= 4 && ws.every(w => /^[\p{L}\p{M}'’-]+$/u.test(w) || PARTICLES.has(w.toLowerCase())); };
 const norm = s => s.toLowerCase().replace(/\s+/g, ' ').trim();
 
 function detect(text, custom){
@@ -458,6 +462,12 @@ function detect(text, custom){
       else if (!sentenceStart(text, t.s)) add(t.s, t.e, 'NAME', 4, {sure: false});
     }
     i = j;
+  }
+  // 3b. words in another script inside a mostly Latin note (an Arabic or Farsi name in an English case note): probably a name
+  const latin = (text.match(/\p{Script=Latin}/gu) || []).length;
+  const other = (text.match(/[^\s\p{Script=Latin}\p{Script=Common}\p{Script=Inherited}]/gu) || []).length;
+  if (latin > other) for (const m of text.matchAll(/[^\s\p{Script=Latin}\p{Script=Common}\p{Script=Inherited}]+(?:[ \t]+[^\s\p{Script=Latin}\p{Script=Common}\p{Script=Inherited}]+){0,3}/gu)){
+    add(m.index, m.index + m[0].length, 'NAME', 4, {sure: false});
   }
   // 4. parts of full names used on their own ("Amina" after "Amina Rahimi")
   const parts = new Map();

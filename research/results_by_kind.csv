@@ -1,0 +1,45 @@
+kind,group,total,caught_default,rate_default,partial_default,caught_with_name_added,rate_with_name_added
+name_single_start,Single names starting a sentence,30,0,0.0,0,0,0.0
+name_lowercase,Lowercase names,86,0,0.0,0,86,100.0
+description,Descriptions that identify someone,40,0,0.0,27,0,0.0
+name_word_start,"Word names starting a sentence (Grace, Hope)",38,1,2.6,0,1,2.6
+address_lowercase,Street addresses,23,22,95.7,0,22,95.7
+name_full,Full names,119,119,100.0,0,119,100.0
+dob_two_digit_year,Dates of birth,15,15,100.0,0,15,100.0
+health_card_ohip,ID and health numbers,26,26,100.0,0,26,100.0
+name_first_after_full,First names after the full name,157,157,100.0,0,157,100.0
+phone_dots,Phone numbers,31,31,100.0,0,31,100.0
+name_single_mid,Single names (mid sentence),84,84,100.0,0,84,100.0
+dob_day_month,Dates of birth,17,17,100.0,0,17,100.0
+phone_dash,Phone numbers,23,23,100.0,0,23,100.0
+phone_uk_intl,Phone numbers,16,16,100.0,0,16,100.0
+name_hyphen,Full names,18,18,100.0,0,18,100.0
+nhs,ID and health numbers,14,14,100.0,0,14,100.0
+name_context,Names after family words,81,81,100.0,0,81,100.0
+email,Emails,70,70,100.0,0,70,100.0
+sin,ID and health numbers,27,27,100.0,0,27,100.0
+phone_intl,Phone numbers,16,16,100.0,0,16,100.0
+name_title,"Names after a title (Ms., Dr.)",92,92,100.0,0,92,100.0
+credit_card,ID and health numbers,15,15,100.0,0,15,100.0
+name_allcaps,ALL CAPS names,24,24,100.0,0,24,100.0
+name_word_full,Full names,20,20,100.0,0,20,100.0
+dob_long,Dates of birth,20,20,100.0,0,20,100.0
+phone_plain,Phone numbers,17,17,100.0,0,17,100.0
+address_basic,Street addresses,30,30,100.0,0,30,100.0
+zip_us,Postcodes,7,7,100.0,0,7,100.0
+dob_slash,Dates of birth,21,21,100.0,0,21,100.0
+client_id,ID and health numbers,58,58,100.0,0,58,100.0
+phone_paren,Phone numbers,21,21,100.0,0,21,100.0
+health_card_no_version,ID and health numbers,24,24,100.0,0,24,100.0
+address_unit_after,Street addresses,20,20,100.0,0,20,100.0
+postcode_ca_lowercase,Postcodes,20,20,100.0,0,20,100.0
+address_unit_dash,Street addresses,20,20,100.0,0,20,100.0
+postcode_ca,Postcodes,31,31,100.0,0,31,100.0
+health_card_bc_phn,ID and health numbers,10,10,100.0,0,10,100.0
+address_flat_first,Street addresses,8,8,100.0,0,8,100.0
+postcode_uk,Postcodes,20,20,100.0,0,20,100.0
+ssn,ID and health numbers,5,5,100.0,0,5,100.0
+name_nonlatin,Names in non-Latin script,15,15,100.0,0,15,100.0
+dob_iso,Dates of birth,19,19,100.0,0,19,100.0
+ni_number,ID and health numbers,19,19,100.0,0,19,100.0
+phone_uk,Phone numbers,24,24,100.0,0,24,100.0

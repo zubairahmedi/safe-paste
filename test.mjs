@@ -54,6 +54,18 @@ for (const want of ["NAME:Siobhan O'Neill", 'NHS:943 476 5919', 'NI:AB 12 34 56 
   'SSN:123-45-6789', 'POSTCODE:78701', 'NAME:وليد المطيري', 'CARD:4111 1111 1111 1111'])
   check(r.includes(want), 'finds ' + want);
 
+// 3b. fixes found by the 200 case note study
+const fx = await page.evaluate(() => [
+  ['Best number is +44 7700 900123.', []], ['She lives at 1203-55 Harbour Square, Toronto', []],
+  ['lives at 45 birchmount road. tell amina to come', ['amina rahimi']], ['Interpreter confirmed the spelling: أمينة رحيمي.', []],
+  ['She has 2 kids and will drive them to court on the way home.', []],
+].map(([t, c]) => window.SafePaste.detect(t, c).map(x => x.type + ':' + x.val)));
+check(fx[0].includes('PHONE:+44 7700 900123'), 'UK international phone hidden whole: ' + fx[0]);
+check(fx[1].includes('ADDRESS:1203-55 Harbour Square'), 'unit-dash address hidden whole: ' + fx[1]);
+check(fx[2].includes('ADDRESS:45 birchmount road.') && fx[2].includes('NAME:amina'), 'lowercase address + lowercase first name from Always hide: ' + fx[2]);
+check(fx[3].includes('NAME:أمينة رحيمي'), 'non-Latin name flagged: ' + fx[3]);
+check(fx[4].length === 0, 'no false alarm on "drive / court / way": ' + fx[4]);
+
 // 4. false positive sanity: ordinary sentence
 const fp = await page.evaluate(() => window.SafePaste.detect('The board met on Monday to review the Q3 budget and the food bank program in Toronto.', []).map(c => c.type + ':' + c.val));
 check(fp.length === 0, 'no false positives in a plain sentence (' + JSON.stringify(fp) + ')');
