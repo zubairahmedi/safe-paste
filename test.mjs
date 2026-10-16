@@ -115,6 +115,11 @@ await page.uncheck('#remember');
 check(await page.evaluate(() => localStorage.getItem('sp-me')) === null, 'unticking Remember deletes them');
 
 check(requests.length === 0, 'zero network requests (' + requests.join(', ') + ')');
+// the how-to video: a button until play is pressed, then a sandboxed privacy enhanced YouTube frame
+check(await page.locator('#vidplay').count() === 1 && await page.locator('.vidcard iframe').count() === 0, 'video is just a button until play is pressed');
+await page.click('#vidplay');
+const vf = page.locator('.vidcard iframe');
+check((await vf.getAttribute('src') || '').startsWith('https://www.youtube-nocookie.com/embed/acWYuqyHrb4') && /allow-scripts/.test(await vf.getAttribute('sandbox') || '') && await vf.getAttribute('referrerpolicy') === 'strict-origin-when-cross-origin', 'play swaps in the sandboxed YouTube player');
 check(errors.length === 0, 'no page errors ' + errors.join('; '));
 await browser.close();
 console.log(fails ? `\n${fails} FAILED` : '\nALL PASSED');
