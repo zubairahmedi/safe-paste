@@ -1,0 +1,14 @@
+{
+  "name": "safe-paste",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hide personal information before it goes into ChatGPT, then put it back in the answer. Runs entirely in the browser.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.48.0"
+  }
+}

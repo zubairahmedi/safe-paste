@@ -1,0 +1,9 @@
+# private: server deploy + internal runbook (VPS, DNS details)
+deploy.py
+RUNBOOK.md
+robots.txt
+sitemap.xml
+__pycache__/
+node_modules/
+*.png
+*.b64
